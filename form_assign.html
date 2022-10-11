@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Registration Form</title>
+
+<body>
+    <h2>New User Registration Form</h2>
+
+    <form action="/action_page.php">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value=""><br><br>
+
+        <label for="email">E-mail Address:</label>
+        <input type="email" placeholder="name@domain.com" id="email" name="email" value=""><br><br>
+
+        <label for="DoB">Date of Birth:</label>
+        <input type="date" value="DoB" placeholder="mm-dd-yyyy">
+        <label for="DoB">(yyyy-mm-dd)</label><br><br>
+        <label for="Experience">HTML Experience Years:</label>
+
+        <!-- (between 0 and 100 years --><label>0</label>
+        <input type="range" max="100" min="0" id="Experience" value="0" step="1"
+            oninput="this.nextElementSibling.value = this.value" /> <label>100 years</label>
+        <br><br>
+
+        <label for="children">Number of Children:</label>
+        <input type="number" id="children" placeholder="0" name="quantity" value="" min="0"><br><br>
+
+        <label for="pageURL">Personal Page URL:</label>
+        <input type="url" id="pageURL" name="pageURL" placeholder="HTTP://domain.com"><br><br>
+
+        <label for="month">Registration renewal month:</label>
+        <input id="month" type="number" min="1" max="12" /><br><br>
+
+        <input type="submit" value="Submit"><br><br>
+        <input type="reset" value="clear">
+    </form>
+</body>
+</head>
